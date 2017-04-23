@@ -1,0 +1,62 @@
+html, body, video {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.videocontent {
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 1600px;
+  height: 900px;
+  animation: example 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes example {
+  from {
+    width: 1600px;
+    height: 900px;
+    transform: rotateY(0deg);
+  }
+  to {
+    width: 1920px;
+    height: 1080px;
+    transform: rotateY(360deg);
+  }
+}
+
+
+.leftAds {
+  position: absolute;
+  top: 0px;
+  left: 1600px;
+  margin: 0;
+  padding: 0;
+  float: right;
+  background-color: blue;
+  width: 320px;
+  height: 900px;
+}
+
+.botAds {
+  position: absolute;
+  top: 900px;
+  left: 0px;
+  background-color: gold;
+  padding-left: 20px;
+  clear: both;
+  width: 1920px;
+  height: 180px;
+}
