@@ -1,0 +1,57 @@
+.module {
+  display: inline-block;
+  max-width: 30%;
+  padding: 15px;
+  margin: 10px;
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  vertical-align: top;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.module-header {
+  text-align: center;
+
+}
+.module-header span, .module-header i {
+  color: blue;
+  text-shadow: 1px 1px 2px #888;
+}
+
+.module-header h2 {
+  line-height: 1.8;
+}
+
+.module-body {
+  min-height: 100px;
+}
+
+.active {
+  background-color: white;
+}
+
+.disabled {
+  background-color: #999;
+}
+
+@media (min-width: 768px) {
+  .sidebar-nav {
+    margin-top: 10px;
+  }
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
